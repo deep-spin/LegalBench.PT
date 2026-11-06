@@ -2,9 +2,15 @@
 
 LegalBench.PT is the first comprehensive legal benchmark specifically designed for the European Portuguese context. It assesses large language models' legal knowledge and reasoning abilities across key areas of the Portuguese law.
 
-📄 Paper: https://arxiv.org/abs/2502.16357
+📄 Paper: https://aclanthology.org/2026.nllp-1.30/
 
 🤗 Dataset: https://huggingface.co/datasets/BeatrizCanaverde/LegalBench.PT
+
+
+## Updates
+
+**LegalBench.PT** was accepted at the [NLLP](https://nllpw.org/workshop/) (Natural Legal Language Processing) Workshop 2026 🎉🎉
+
 
 ## About
 
@@ -71,13 +77,27 @@ python evaluation.py compute_model_scores \
 
 Please cite the following paper if you use LegalBench.PT in your work:
 ```bibtex
-@misc{canaverde2025legalbenchptbenchmarkportugueselaw,
-      title={LegalBench.PT: A Benchmark for Portuguese Law}, 
-      author={Beatriz Canaverde and Telmo Pessoa Pires and Leonor Melo Ribeiro and André F. T. Martins},
-      year={2025},
-      eprint={2502.16357},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={}, 
+@inproceedings{canaverde-etal-2026-legalbench,
+    title = "{L}egal{B}ench.{PT}: A Benchmark for {P}ortuguese Law",
+    author = "Canaverde, Beatriz  and
+      Pires, Telmo  and
+      Martins, Andre",
+    editor = "Aletras, Nikolaos  and
+      Chalkidis, Ilias  and
+      Barrett, Leslie  and
+      Goanț{\u{a}}, C{\u{a}}t{\u{a}}lina  and
+      Preoțiuc-Pietro, Daniel  and
+      Spanakis, Gerasimos  and
+      Xu, Shanshan",
+    booktitle = "Proceedings of the Natural Legal Language Processing Workshop 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.nllp-1.30/",
+    doi = "10.18653/2026.nllp-1.30",
+    pages = "334--349",
+    ISBN = "979-8-89176-494-1",
+    abstract = "The growing use of LLMs in the legal field has spurred the creation of benchmarks across various jurisdictions and languages, yet none specifically focused on the Portuguese legal system. We present LegalBench.PT, the first comprehensive benchmark for Portuguese law. To develop it, we first collect long-form questions and answers from real law exams, and then use GPT-4o to convert them into multiple-choice, true/false, and matching formats. Once generated, the questions are filtered and processed to improve the quality of the dataset. To ensure accuracy and relevance, we validate our approach by having a legal professional review a sample of the generated questions. Although synthetically generated, we show that their basis in human-created exams and our rigorous filtering and processing methods applied result in a reliable benchmark for assessing LLMs' legal knowledge and reasoning abilities. Finally, we evaluate the performance of leading LLMs on LegalBench.PT and investigate potential biases in GPT-4o{'}s responses. We also assess the performance of Portuguese lawyers on a sample of questions to establish a baseline for model comparison and validate the benchmark."
 }
 ```
